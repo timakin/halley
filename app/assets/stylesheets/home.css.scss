@@ -1,0 +1,36 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+
+@font-face{
+  font-family: Mojave;
+  src: font-url("Mojave-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: Lato;
+  src: font-url("Lato-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.topmain{
+	background-color: white;
+}
+
+.jumbotron{
+	background-color: white;
+	h1{
+		//font-size: 98px;
+		font-family: Lato;
+		letter-spacing: 0.2em;
+		color: #0AC5F4;
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

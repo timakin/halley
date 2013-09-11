@@ -6,20 +6,62 @@ gem 'rails', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
 
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
 
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
+group :assets do
+  # Use SCSS for stylesheets
+  gem 'sass-rails', '~> 4.0.0'
+  # Use CoffeeScript for .js.coffee assets and views
+  gem 'coffee-rails', '~> 4.0.0'  
 
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', platforms: :ruby  
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
+
+  gem "zurui-sass-rails"
+  gem 'bourbon'
+  # Bootstrap
+  gem 'bootstrap-sass', :git => 'https://github.com/thomas-mcdonald/bootstrap-sass.git'
+  gem 'bootstrap-generators', :git => 'git://github.com/decioferreira/bootstrap-generators.git'  
+  gem "flat-ui-rails"
+  # Use Uglifier as compressor for JavaScript assets
+  gem 'uglifier', '>= 1.3.0'
+end
+  # Use jquery as the JavaScript library
+  gem 'jquery-rails'
+  gem 'underscore-rails'
+  gem 'rails-backbone'
+
+
+
+group :development do
+  gem "rails-erd"
+  gem 'binding_of_caller'
+  gem 'sextant'
+  gem 'quiet_assets'
+  gem 'hirb'
+  gem 'hirb-unicode'
+#  gem 'pry-doc'
+end
+
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'omniauth'
+gem "omniauth-facebook"
+gem "omniauth-twitter"
+gem 'omniauth-google-oauth2'
+gem 'devise'
+gem 'acts_as_commentable'
+gem 'acts-as-taggable-on'
+gem 'rspec-rails'
+gem 'pry-rails'
+gem 'rails_config'
+gem 'cancan'
+gem 'party_boy'
+gem 'ransack'
+gem 'public_activity'
+
+
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
@@ -31,6 +73,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,0 +1,44 @@
+@font-face{
+  font-family: Mojave;
+  src: font-url("Mojave-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face{
+  font-family: Lato;
+  src: font-url("Lato-Regular.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.navbar {
+	background-color: rgba(255,255,255,0.4);
+	height: 100px;
+	margin-top: auto;
+	margin-bottom: auto;
+	a {
+		color: #0AC5F4;
+		font-size:20px;
+	}
+}
+
+.navbar-nav{
+	float: right;
+	li{
+		a{
+			padding-top: 40px;
+			padding-bottom: 40px;
+			font-family: Lato;
+		}
+		a:hover{
+			background-color: #0AC5F4;
+			color: white;
+		}
+	}
+}
+
+.navbar-brand{
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-family: Lato;
+}
