@@ -24,6 +24,11 @@
 
 .jumbotron{
 	background-color: white;
+	height: 500px;
+
+		width: 280px;
+		margin-left: auto;
+		margin-right: auto;
 	h1{
 		//font-size: 98px;
 		font-family: Lato;
@@ -32,5 +37,24 @@
 		width: 280px;
 		margin-left: auto;
 		margin-right: auto;
+	}
+}
+.desc{
+	height: 600px;
+	background-color: #FFA755;
+}
+
+@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+{
+
+	.jumbotron{
+		 h1 {
+		font-family: Lato;
+		letter-spacing: 0.2em;
+		color: #0AC5F4;
+		width: 172px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	}
 }
