@@ -1,7 +1,17 @@
 <div class="container">
 	<div class="desc1">
 		<a class="attention">HALLEY</a>
-	</div>
+	
+<%= form_for("user", :url => new_user_session_path) do |f| %>
+  <%= f.text_field :email, :class=>"form-control", :autocomplete=>"off", :placeholder=>"E-mail" %>
+  <%= f.password_field :password, :class=>"form-control", :placeholder=>"Password" %>
+  <!--
+  <%= f.check_box :remember_me %>
+  <%= f.label :remember_me %>
+-->
+  <%= f.submit 'Go', :class=>"btn btn-default" %>
+<% end %>
+</div>
 </div>
 	
 <div class="desc2">

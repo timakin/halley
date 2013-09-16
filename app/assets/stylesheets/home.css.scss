@@ -2,6 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+input:-webkit-autofill {
+    background-color: white !important;
+}
 
 
 @font-face{
@@ -24,8 +27,19 @@
   font-style: normal;
 }
 
-.colorbar{
-	background-image: url("../../images/color-bar.jpg");
+input.form-control{
+	color: #0AC5F4;
+	background-color: transparent;
+	border-color: #0AC5F4;
+	border-width: 2px;
+	padding: 20px;
+	border-radius: 0px;
+	float: left;
+	width: 200px;
+	margin-left: -2px;
+}
+form{
+	margin-left: 150px;
 }
 
 a.attention{
@@ -35,7 +49,6 @@ a.attention{
 	color: #0AC5F4;
 	text-decoration: none;
 	margin-left: 280px;
-
 }
 
 .desc1{

@@ -19,7 +19,7 @@ group :assets do
 
 
   gem "zurui-sass-rails"
-  gem 'bourbon'
+
   # Bootstrap
   gem 'bootstrap-sass', :git => 'https://github.com/thomas-mcdonald/bootstrap-sass.git'
   gem 'bootstrap-generators', :git => 'git://github.com/decioferreira/bootstrap-generators.git'  
@@ -31,7 +31,7 @@ end
   gem 'jquery-rails'
   gem 'underscore-rails'
   gem 'rails-backbone'
-
+  gem 'bourbon'
 
 
 group :development do

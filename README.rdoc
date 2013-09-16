@@ -33,3 +33,9 @@ http://smashinghub.com/free-fonts-for-flat-design.htm
 http://www.tagindex.com/stylesheet/text_font/letter_spacing.html
 http://www.triplagent.com/
 http://memocarilog.info/jquery/5217
+https://github.com/plataformatec/devise/wiki/How-To:-Display-a-custom-sign_in-form-anywhere-in-your-app
+
+There is still no "out of the box" way to have a non-responsive layout with the bootstrap-generators gem. But I just found a reference on the getbootstrap.com website that explains how it can be done (the instructions are at http://getbootstrap.com/examples/non-responsive/). So what you have to do on your rails project is:
+* Remove or comment out the line "<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">" on your app/views/layouts/application.html.erb file.
+* Download the file http://getbootstrap.com/examples/non-responsive/non-responsive.css to your app/assets/stylesheets directory
+* And just to make sure that the loading order is correct, add the line "@import "non-responsive";" to the end of your "app/assets/stylesheets/bootstrap-generators.[less|scss]" file
