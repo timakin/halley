@@ -17,44 +17,35 @@
   font-style: normal;
 }
 
-
-.topmain{
-	background-color: white;
+@font-face{
+  font-family: LatoHair;
+  src: font-url("Lato-Hairline.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.jumbotron{
-	background-color: white;
-	height: 500px;
-
-		width: 280px;
-		margin-left: auto;
-		margin-right: auto;
-	h1{
-		//font-size: 98px;
-		font-family: Lato;
-		letter-spacing: 0.2em;
-		color: #0AC5F4;
-		width: 280px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+.colorbar{
+	background-image: url("../../images/color-bar.jpg");
 }
-.desc{
-	height: 600px;
+
+a.attention{
+	font-size: 98px;
+	font-family: LatoHair;
+	letter-spacing: 0.2em;
+	color: #0AC5F4;
+	text-decoration: none;
+	margin-left: 280px;
+
+}
+
+.desc1{
+	padding-top: 60px;
+	height: 480px;
+}
+.desc2{
+	padding-top:60px;
+	height: 480px;
 	background-color: #FFA755;
 }
 
-@media (max-width: 767px) /* @grid-float-breakpoint -1 */
-{
 
-	.jumbotron{
-		 h1 {
-		font-family: Lato;
-		letter-spacing: 0.2em;
-		color: #0AC5F4;
-		width: 172px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	}
-}

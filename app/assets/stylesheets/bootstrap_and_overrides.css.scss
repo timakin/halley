@@ -12,87 +12,84 @@
 }
 
 
-@media (min-width: 767px){
-	.navbar {
-		background-color: rgba(255,255,255,0.4);
-		height: 100px;
-		margin-top: auto;
-		margin-bottom: auto;
-//		border-bottom: 2px solid;
-//		border-color: #0AC5F4;
-		a {
-			color: #0AC5F4;
-			font-size:20px;
-		}
-	}	
-	.navbar-nav{
-		float: right;
-		li{
-			a{
-				padding-top: 40px;
-				padding-bottom: 40px;
-				font-family: Lato;
-			}
-			a:hover{
-				background-color: #0AC5F4;
-				color: white;
-			}
-		}
-	}
-	.navbar-brand{
-		padding-top: 40px;
-		padding-bottom: 40px;
-		font-family: Lato;
-	}
-}
+//@media (min-width: 767px){
+//	.navbar {
+//		background-color: rgba(255,255,255,0.4);
+//		height: 100px;
+//		margin-top: auto;
+//		margin-bottom: auto;
+////		border-bottom: 2px solid;
+////		border-color: #0AC5F4;
+//		a {
+//			color: #0AC5F4;
+//			font-size:20px;
+//		}
+//	}	
+//	.navbar-nav{
+//		float: right;
+//		li{
+//			a{
+//				padding-top: 40px;
+//				padding-bottom: 40px;
+//				font-family: Lato;
+//			}
+//			a:hover{
+//				background-color: #0AC5F4;
+//				color: white;
+//			}
+//		}
+//	}
+//	.navbar-brand{
+//		padding-top: 40px;
+//		padding-bottom: 40px;
+//		font-family: Lato;
+//	}
+//}//
 
-@media (max-width: 767px) /* @grid-float-breakpoint -1 */
-{
-    .navbar-fixed-top
-    {
-	    background-color: #0AC5F4;
-	    float: right;
-    }
-    .navbar-toggle .icon-bar {
-		display: block;
-		width: 22px;
-		height: 2px;
-		border-radius: 1px;
-		background: #0AC5F4;
-	}
-	.navbar-toggle {
-		position: relative;
-		float: right;
-		margin-right: 15px;
-		padding: 9px 10px;
-		margin-top: 8px;
-		margin-bottom: 8px;
-		background: white;
-		background-color: white;
-		border: 1px solid transparent;
-		border-radius: 4px;
-	}
-	.navbar-nav > li{
-		a{
-			font-family: Mojave;
-			font-size: 24px;
-			letter-spacing: 0.2em;
-			color: white;
-			text-align: center;
-		}
-		a:hover{
-			background-color: white;
-			color: #0AC5F4;
-		}
-	}
-}
+//@media (max-width: 767px) /* @grid-float-breakpoint -1 */
+//{
+//    .navbar-fixed-top
+//    {
+//	    background-color: #0AC5F4;
+//	    float: right;
+//    }
+//    .navbar-toggle .icon-bar {
+//		display: block;
+//		width: 22px;
+//		height: 2px;
+//		border-radius: 1px;
+//		background: #0AC5F4;
+//	}
+//	.navbar-toggle {
+//		position: relative;
+//		float: right;
+//		margin-right: 15px;
+//		padding: 9px 10px;
+//		margin-top: 8px;
+//		margin-bottom: 8px;
+//		background: white;
+//		background-color: white;
+//		border: 1px solid transparent;
+//		border-radius: 4px;
+//	}
+//	.navbar-nav > li{
+//		a{
+//			font-family: Mojave;
+//			font-size: 24px;
+//			letter-spacing: 0.2em;
+//			color: white;
+//			text-align: center;
+//		}
+//		a:hover{
+//			background-color: white;
+//			color: #0AC5F4;
+//		}
+//	}
+//}//
 
-.container{
-	margin-right: auto;
-	margin-left: auto;
-
-	padding-top: 100px;
-}
+//.container{
+//	padding-top: 100px;
+//}
 
 .img-thumbnail{
 	height: 200px;
