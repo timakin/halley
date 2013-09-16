@@ -60,8 +60,7 @@ gem 'cancan'
 gem 'party_boy'
 gem 'ransack'
 gem 'public_activity'
-
-
+gem 'reditor'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
