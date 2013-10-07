@@ -2,6 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@import "home-button-and-icon";
+
+body{
+	padding-top:0px;
+	padding-bottom: 0px;
+}
+
 input:-webkit-autofill {
     background-color: white !important;
 }
@@ -27,10 +34,12 @@ input:-webkit-autofill {
   font-style: normal;
 }
 
+
 input.form-control{
-	color: #0AC5F4;
+	color: white;
 	background-color: transparent;
-	border-color: #0AC5F4;
+	font-style: white;
+	border-color: white;
 	border-width: 2px;
 	padding: 20px;
 	border-radius: 0px;
@@ -38,27 +47,38 @@ input.form-control{
 	width: 200px;
 	margin-left: -2px;
 }
+
+.form-control:focus{
+	border-color: white;
+	color: white;
+}
 form{
 	margin-left: 150px;
+}
+
+.container1{
+	background-color:#0AC5F4;
 }
 
 a.attention{
 	font-size: 98px;
 	font-family: LatoHair;
 	letter-spacing: 0.2em;
-	color: #0AC5F4;
+	color: white;
 	text-decoration: none;
 	margin-left: 280px;
 }
 
 .desc1{
-	padding-top: 60px;
-	height: 480px;
+	padding-top: 110px;
+	height: 580px;
+	margin-left: 145px;
 }
 .desc2{
 	padding-top:60px;
 	height: 480px;
-	background-color: #FFA755;
+	background-color: white;
 }
+
 
 
