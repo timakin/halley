@@ -34,6 +34,12 @@ input:-webkit-autofill {
   font-style: normal;
 }
 
+@font-face{
+  font-family: FLANCHISE;
+  src: font-url("Franchise-Bold.ttf") format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
 input.form-control{
 	color: white;

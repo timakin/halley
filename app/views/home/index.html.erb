@@ -1,7 +1,7 @@
 <div class="container1">
 	<div class="desc1">
 		<a class="attention">HALLEY</a>
-		<%= form_for("user", :url => new_user_session_path, :html => {:class => "regist"} ) do |f| %>
+		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => "regist"} ) do |f| %>
 		  <%= f.text_field :email, :class=>"form-control", :autocomplete=>"off", :placeholder=>"E-mail" %>
 		  <%= f.password_field :password, :class=>"form-control", :placeholder=>"Password" %>
 		  <%= button_tag(type: 'submit', class: "btn btn-fire btn-lg") do %>
@@ -10,7 +10,9 @@
 		<% end %>
 	</div>
 </div>
-	
+	<% if user_signed_in? %>
+  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+<% end %>
 <div class="desc2">
 	<div class="container">
 		<div class="row">
