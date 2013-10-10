@@ -12,8 +12,14 @@ form.regist{
 	background-color: transparent;
 }
 
+.btn-fire:hover{
+	background-color: white;
+	.glyphicon{
+		color: #0AC5F4;
+	}
+}
+
 .btn:focus{
-	color: white;
 	outline: none;
 	outline-offset: none;
 }

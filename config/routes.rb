@@ -1,4 +1,5 @@
 Halley::Application.routes.draw do
+
   devise_for :users
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -6,7 +7,6 @@ Halley::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root :to => 'home#index'
-
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

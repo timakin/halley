@@ -1,27 +1,33 @@
 <div class="container1">
+
 	<div class="desc1">
 		<a class="attention">HALLEY</a>
-		<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => "regist"} ) do |f| %>
-		  <%= f.text_field :email, :class=>"form-control", :autocomplete=>"off", :placeholder=>"E-mail" %>
-		  <%= f.password_field :password, :class=>"form-control", :placeholder=>"Password" %>
-		  <%= button_tag(type: 'submit', class: "btn btn-fire btn-lg") do %>
-		 	<span class="glyphicon glyphicon-fire"></span>
-		  <% end %>
+		<% if !user_signed_in? %>
+			<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => "regist"} ) do |f| %>
+			  <%= f.text_field :email, :class=>"form-control", :autocomplete=>"off", :placeholder=>"E-mail" %>
+			  <%= f.password_field :password, :class=>"form-control", :placeholder=>"Password" %>
+			  <%= button_tag(type: 'submit', class: "btn btn-fire btn-lg") do %>
+			 	<span class="glyphicon glyphicon-fire"></span>
+			  <% end %>
+			<% end %>
 		<% end %>
 	</div>
 </div>
-	<% if user_signed_in? %>
+
+<% if user_signed_in? %>
   <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 <% end %>
 <div class="desc2">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-5">
-				<%= image_tag("halley_comet.jpg", :class => "img-circle img-thumbnail", :size=>"200x200") %>	
-			</div>
-			<div class="col-xs-7">
+			<div class="list1">
 				<p>TEST</p>
+			</div>
+			<div class="list2">
+				<%= image_tag("halley_comet.jpg", :class => "img-circle img-thumbnail", :size=>"200x200") %>
 			</div>
 		</div>
 	</div>
 </div>
+
+
