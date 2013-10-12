@@ -1,5 +1,6 @@
 Halley::Application.routes.draw do
 
+  get "dashboard" => 'dashboards#dashboard'
   devise_for :users
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
