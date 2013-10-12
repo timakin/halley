@@ -1,6 +1,14 @@
-<div class="container1">
 
+
+<div class="container1">
 	<div class="desc1">
+		<% if !user_signed_in? %>
+			<div class="loginbar">
+				<button class="btn btn-login" id="btn-login">
+					<a>Login</a>
+				</button>
+			</div>
+		<% end %>
 		<a class="attention">HALLEY</a>
 		<% if !user_signed_in? %>
 			<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => {:class => "regist"} ) do |f| %>
@@ -13,7 +21,6 @@
 		<% end %>
 	</div>
 </div>
-
 <% if user_signed_in? %>
   <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
 <% end %>
@@ -21,7 +28,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="list1">
-				<p>TEST</p>
+				<p>TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</br>TESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTESTTEST</p>
 			</div>
 			<div class="list2">
 				<%= image_tag("halley_comet.jpg", :class => "img-circle img-thumbnail", :size=>"200x200") %>
@@ -29,5 +36,3 @@
 		</div>
 	</div>
 </div>
-
-

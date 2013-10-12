@@ -2,7 +2,6 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-@import "home-button-and-icon";
 
 body{
 	padding-top:0px;
@@ -41,6 +40,9 @@ input:-webkit-autofill {
   font-style: normal;
 }
 
+
+@import "home-button-and-icon";
+
 input.form-control{
 	color: white;
 	background-color: transparent;
@@ -63,10 +65,14 @@ form{
 }
 
 .container1{
-	background-color:#0AC5F4;
+	background-color:#2E8EDB;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 a.attention{
+	margin-top: 100px;
 	font-size: 98px;
 	font-family: LatoHair;
 	letter-spacing: 0.2em;
@@ -76,14 +82,17 @@ a.attention{
 }
 
 .desc1{
-	padding-top: 110px;
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
 	height: 580px;
-	margin-left: 145px;
 }
 .desc2{
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
 	padding-top:120px;
 	height: 480px;
-	background-color: #E9ECEC;
 }
 
 .list1{
@@ -98,4 +107,10 @@ a.attention{
 	text-align: center;
 }
 
-
+.loginbar{
+	height: 80px;
+	padding-top: 20px;
+	a{
+		color: white;
+	}
+}
