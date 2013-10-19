@@ -1,5 +1,9 @@
 Halley::Application.routes.draw do
 
+  resources :databoxes do
+    collection { post :import }
+  end
+
   get "dashboard" => 'dashboards#dashboard'
   devise_for :users
   get "home/index"
