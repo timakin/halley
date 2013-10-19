@@ -79,6 +79,6 @@ class DataboxesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def databox_params
-      params.require(:databox).permit(:title, :description)
+      params.require(:databox).permit(:title, :description, :data)
     end
 end

@@ -5,4 +5,4 @@ http://www.triplagent.com/
 http://memocarilog.info/jquery/5217
 https://github.com/plataformatec/devise/wiki/How-To:-Display-a-custom-sign_in-form-anywhere-in-your-app
 https://github.com/plataformatec/devise/wiki/How-To:-Redirect-to-a-specific-page-on-successful-sign-in
-
+https://github.com/carrierwaveuploader/carrierwave/issues/399
