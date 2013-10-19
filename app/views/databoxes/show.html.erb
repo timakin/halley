@@ -1,0 +1,24 @@
+<div class="page-header">
+  <%= link_to databoxes_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_databox_path(@databox), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show databox</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Title:</dt>
+  <dd><%= @databox.title %></dd>
+
+  <dt>Description:</dt>
+  <dd><%= @databox.description %></dd>
+<h2>Import Products</h2>
+<%= form_tag import_databoxes_path, multipart: true do %>
+  <%= file_field_tag :file %>
+  <%= submit_tag "Import" %>
+<% end %>
+</dl>
