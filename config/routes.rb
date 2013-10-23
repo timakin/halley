@@ -2,6 +2,7 @@ Halley::Application.routes.draw do
 
   resources :databoxes do
     collection { post :import }
+		collection { get  :download_data }	
   end
 
   get "dashboard" => 'dashboards#dashboard'

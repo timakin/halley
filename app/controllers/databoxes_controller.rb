@@ -71,6 +71,11 @@ class DataboxesController < ApplicationController
     redirect_to root_url, notice: "Products imported."
   end
 
+	def download_data
+		send_file(Databox.find(params[:id]).data.file.path,
+							:filename => Databox.find(params[:id]).data.file.filename)
+	end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_databox
