@@ -1,15 +1,22 @@
 # encoding: utf-8
+require 'carrierwave/processing/mime_types'
 
 class DataUploader < CarrierWave::Uploader::Base
+	include CarrierWave::MimeTypes
 
+	process :set_content_type
+	process :save_content_type_and_size_in_model
+
+ 	def save_content_type_and_size_in_model
+		model.content_type = file.content_type if file.content_type
+	end
   # Include RMagick or MiniMagick support:
   # include CarrierWave::RMagick
-  # include CarrierWave::MiniMagick
+  # include CarrierWave::MiniMagicka
 
   # Choose what kind of storage to use for this uploader:
   storage :file
   # storage :fog
-
   # Override the directory where uploaded files will be stored.
   # This is a sensible default for uploaders that are meant to be mounted:
   def store_dir

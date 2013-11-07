@@ -11,7 +11,6 @@
     <thead>
       <tr>
             <th>Title</th>
-            <th>Description</th>
             <th></th>
         <th></th>
         <th></th>
@@ -21,7 +20,6 @@
     <tbody>
       <%= content_tag_for(:tr, @databoxes) do |databox| %>
             <td><%= databox.title %></td>
-            <td><%= databox.description %></td>
             <td><%= link_to 'Show', databox %></td>
         <td><%= link_to 'Edit', edit_databox_path(databox) %></td>
         <td><%= link_to 'Destroy', databox, method: :delete, data: { confirm: 'Are you sure?' } %></td>

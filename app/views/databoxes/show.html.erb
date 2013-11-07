@@ -18,6 +18,8 @@
   <dt>Description:</dt>
   <dd><%= @databox.description %></dd>
 
-	<dt>Description:</dt>
-	<dd><%= link_to 'Download Data', :action => "download_data", :id => @databox.id. %></dd>
+	<% if @databox.data.try(:file) %>
+    <dt>File:</dt>
+		<dd><%= link_to 'Download Data', :action => "download_data", :id => @databox.id %></dd>
+	<% end %>		
 </dl>

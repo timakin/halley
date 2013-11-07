@@ -45,6 +45,9 @@ GEM
     arel (4.0.0)
     atomic (1.1.14)
     bcrypt-ruby (3.1.2)
+    better_errors (1.0.1)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
     bourbon (3.1.8)
@@ -257,6 +260,7 @@ PLATFORMS
 DEPENDENCIES
   acts-as-taggable-on
   acts_as_commentable
+  better_errors
   binding_of_caller
   bootstrap-generators!
   bootstrap-sass!
@@ -271,6 +275,7 @@ DEPENDENCIES
   hirb-unicode
   jbuilder (~> 1.2)
   jquery-rails
+  mime-types
   mini_magick
   omniauth
   omniauth-facebook

@@ -30,8 +30,7 @@ class DataboxesController < ApplicationController
   # POST /databoxes.json
   def create
     @databox = Databox.new(databox_params)
-
-    respond_to do |format|
+		respond_to do |format|
       if @databox.save
         format.html { redirect_to @databox, notice: 'Databox was successfully created.' }
         format.json { render action: 'show', status: :created, location: @databox }

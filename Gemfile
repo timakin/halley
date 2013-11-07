@@ -41,10 +41,11 @@ group :development do
   gem 'quiet_assets'
   gem 'hirb'
   gem 'hirb-unicode'
-#  gem 'pry-doc'
+  gem 'better_errors'
 end
 
 gem 'carrierwave'
+gem 'mime-types'
 gem 'mini_magick'
 gem 'omniauth'
 gem "omniauth-facebook"
