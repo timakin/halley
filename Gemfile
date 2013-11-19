@@ -32,7 +32,7 @@ end
   gem 'underscore-rails'
   gem 'rails-backbone'
   gem 'bourbon'
-
+  gem 'dropzonejs-rails'
 
 group :development do
   gem "rails-erd"
