@@ -7,12 +7,16 @@ Halley::Application.routes.draw do
 
   get "dashboard" => 'dashboards#dashboard'
   devise_for :users
+
+  devise_scope :user do
+    root :to => 'devise/registrations#new'
+	end
   get "home/index"
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root :to => 'home#index'
+  # root :to => 'devise/sessions#new'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

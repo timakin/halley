@@ -1,6 +1,6 @@
 class DataboxesController < ApplicationController
   before_action :set_databox, only: [:show, :edit, :update, :destroy]
-
+	before_filter :authenticate_user!
   # GET /databoxes
   # GET /databoxes.json
   def index
