@@ -1,9 +1,12 @@
 Halley::Application.routes.draw do
 
+  get "comment/create"
   resources :databoxes do
     collection { post :import }
 		collection { get  :download_data }	
   end
+  resources :comments, :only => [:create]
+
 
   get "dashboard" => 'dashboards#dashboard'
   devise_for :users

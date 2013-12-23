@@ -11,6 +11,9 @@ class DataboxesController < ApplicationController
   # GET /databoxes/1.json
   def show
     @databoxes = Databox.order(:name)
+    @comment = @databox.comments.build
+    @databox.comments.pop
+
     respond_to do |format|
       format.html
       format.csv { render text: @databoxes.to_csv }

@@ -21,3 +21,17 @@
 		<dd><%= link_to 'Download Data', :action => "download_data", :id => @databox.id %></dd>
 	<% end %>		
 </dl>
+
+<table>
+  <tr>
+    <th>comment</th>
+  </tr>
+
+<% @databox.comments.each do |comment| %>
+  <tr>
+     <td><%= comment.comment %> </td>
+  </tr>
+<% end %>
+</table>
+
+<%= render 'comments/form' %>
