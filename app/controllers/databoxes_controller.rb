@@ -62,10 +62,11 @@ class DataboxesController < ApplicationController
   # DELETE /databoxes/1.json
   def destroy
     @databox.destroy
-    respond_to do |format|
-      format.html { redirect_to databoxes_url }
-      format.json { head :no_content }
-    end
+    render json: { post: @databox }
+#    respond_to do |format|
+#      format.html { redirect_to databoxes_url }
+#      format.json { head :no_content }
+#    end
   end
 
   def import

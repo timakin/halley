@@ -20,7 +20,7 @@
             <td><%= databox.title %></td>
             <td><%= link_to 'Show', databox %></td>
         <td><%= link_to 'Edit', edit_databox_path(databox) %></td>
-        <td><%= link_to 'Destroy', databox, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', databox, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true %></td>
       <% end %>
     </tbody>
   </table>

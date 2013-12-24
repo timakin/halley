@@ -12,6 +12,9 @@ $(function(){
 		proccessing: true
 		
 	});
+	$('a[data-method="delete"]').on('ajax:success', function(e, data, status, xhr) {
+		$('#databox_'+data.post.id).fadeOut("slow");
+	});
 });
 
 
