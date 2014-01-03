@@ -7,7 +7,8 @@ class CommentsController < ApplicationController
 				if @comment.nil?
 					redirect_to databox_path(params[:comment][:commentable_id])		
 				elsif @comment.save	
-					redirect_to databoxes_path
+					render json: { post: @comment }
+				#	redirect_to databoxes_path
 				end				
 			else
 				redirect_to root_url

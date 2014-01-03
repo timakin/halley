@@ -23,15 +23,13 @@
 </dl>
 
 <table>
-  <tr>
-    <th>comment</th>
-  </tr>
-
+  <tbody id="comment-list">
 <% @databox.comments.each do |comment| %>
   <tr>
-     <td><%= comment.comment %> </td>
+     <td><%= comment.comment %></td>
   </tr>
 <% end %>
+</tbody>
 </table>
 
 <%= render 'comments/form' %>

@@ -1,5 +1,5 @@
  
-<%= form_for(@comment) do |f| %>
+<%= form_for @comment, remote: true do |f| %>
   <div class="field">
     <%= f.label :comment %><br />
     <%= f.text_area :comment %> 
@@ -7,6 +7,6 @@
     <%= f.hidden_field :commentable_type %>
   </div>
   <div class="actions">
-    <%= f.submit :class=> "btn" %>
- </div>
-  <% end %>
+    <%= f.submit :class=> "btn", :id => 'create-comment' %>
+  </div>
+ <% end %>
